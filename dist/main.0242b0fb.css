@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  width: 100vw;
+}
+#container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#container > section {
+  width: 50vw;
+  height: 50vh;
+  border: 1px solid black;
+}
+
+#tab-bar {
+  display: flex;
+}
+#tab-bar li {
+  flex: 1;
+  border: 1px solid black;
+}
+
+#tab-bar .active {
+  background-color: rgba(0, 0, 255, 0.5);
+}
+#tab-content li {
+  display: none;
+}
+#tab-content .active {
+  display: block;
+}
+
+#square {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  transition: all 1s linear;
+}
+
+#square.active {
+  transform: translateX(100px);
+}
+
+#circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: 1px solid black;
+}
+#circle.active {
+  animation: bgcolor 1s alternate infinite;
+}
+
+@keyframes bgcolor {
+  0% {
+    background-color: blue;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+
+/*# sourceMappingURL=main.0242b0fb.css.map */
